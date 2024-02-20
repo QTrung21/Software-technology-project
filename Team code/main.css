@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-#logo img {
-    width: 100px;
-    height: 80px;
+.navbar {
+    position: fixed;
+    
 }
