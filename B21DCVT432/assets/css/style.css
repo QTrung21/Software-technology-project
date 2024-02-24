@@ -17,7 +17,8 @@ html{
   --text-color: white;
 }
 
-  
+/* Header */
+
 .header{
   position: fixed;
   background-color: var(--bg-color);
@@ -64,16 +65,44 @@ html{
   margin-left: 50px;
 }
 
+/* Home */
+
 .home{
   height: 100vh;
   display: flex;
 }
 
-.home-icon a{
-  line-height: 100vh;
+.home-icon{
+  margin-top: 500px;
   align-items: center;
 }
 
-.home-content h1{
+.home-icon a{
   line-height: 100vh;
+  padding: 30px 0;
+  display: flex;
+}
+
+.home-content{
+  line-height: 100vh;
+  text-align: center;
+}
+
+/* About me */
+
+.about-me{
+  justify-content: center
+}
+
+.about-me-content{
+  position:;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+
+.about-me-img{
+  position: relative;
+  border-style: solid;
+  border: #ccc;
 }
