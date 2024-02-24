@@ -23,10 +23,9 @@ html{
   background-color: var(--bg-color);
   display: flex;
   height: 75px;
-  padding: 20px 10%;
-  top: 0;
-  width: 100%;
-  padding: 0 5%;
+  padding: 0px 5%;
+  left: 0;
+  right: 0;
   justify-content: space-between;
 }
   
@@ -51,6 +50,7 @@ html{
   padding: 0 20px;
   font-weight: 600;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .navbar li:hover a{
@@ -61,9 +61,19 @@ html{
 
   
 .navbar {
-  margin-left: 35px;
+  margin-left: 50px;
 }
 
 .home{
-  margin-top: 75px;
+  height: 100vh;
+  display: flex;
+}
+
+.home-icon a{
+  line-height: 100vh;
+  align-items: center;
+}
+
+.home-content h1{
+  line-height: 100vh;
 }
