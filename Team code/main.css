@@ -26,6 +26,19 @@ html{
     justify-content: space-between;
 }
 
+.search{
+    line-height: 75px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-size: 600;
+}
+
+.searchbar{
+    line-height: 75px;
+    border-style: solid;
+    
+}
+
 .logo{
     line-height: 75px;
 }
@@ -47,8 +60,4 @@ html{
     color: #000;
     background-color: #ccc;
     display: inline-block;
-}
-
-.about-us{
-    
 }
