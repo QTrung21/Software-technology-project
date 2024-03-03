@@ -61,3 +61,33 @@ html{
     background-color: #ccc;
     display: inline-block;
 }
+
+/* About us */
+
+.about-us{
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    padding-top: 75px;
+}
+
+.Trung{
+    border-style: solid;
+    border-radius: 0.5rem;
+    padding-top: 230px;
+    text-align: center;
+    width: 200px;
+    height: 350px;
+    background-color: #fff;
+    color: #000;
+}
+
+.Trung div{
+    padding: 10px 0px;
+}
+
+.Trung a{
+    text-transform: uppercase;
+    border-style: solid;
+}
