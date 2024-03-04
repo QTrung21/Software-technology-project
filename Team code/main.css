@@ -66,28 +66,43 @@ html{
 
 .about-us{
     height: 100vh;
-    background-color: blue;
+    background-color: #ccc;
     display: flex;
     flex-direction: row;
-    padding-top: 75px;
+    padding-top: 90px;
+    justify-content: space-evenly;
 }
 
 .Trung{
     border-style: solid;
     border-radius: 0.5rem;
-    padding-top: 230px;
     text-align: center;
-    width: 200px;
+    width: 250px;
     height: 350px;
     background-color: #fff;
     color: #000;
 }
 
+.Trung img{
+    margin-top: 10px;
+    height: 220px;
+    width: 220px;
+    border: solid;
+}
+
 .Trung div{
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 .Trung a{
     text-transform: uppercase;
     border-style: solid;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5rem;
+}
+
+.Trung h3{
+    text-transform: uppercase;
+    padding-top: 20px;
 }
