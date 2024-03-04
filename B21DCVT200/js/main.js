@@ -1,16 +1,15 @@
-// Menu
-const menu = document.querySelector(".navbar__links");
-const menuButton = document.querySelector(".navbar__icons");
-const overlay = document.querySelector("#overlay");
+document.addEventListener("DOMContentLoaded", function() {
+  var image = document.querySelector('.image');
 
-menuButton.addEventListener("click", () => {
-  menu.classList.toggle("navbar__open");
-  menuButton.classList.toggle("open");
-  overlay.classList.toggle("show");
-});
-
-overlay.addEventListener("click", () => {
-  menu.classList.toggle("navbar__open");
-  menuButton.classList.toggle("open");
-  overlay.classList.toggle("show");
+  window.addEventListener('scroll', function() {
+      var boundingBox = image.getBoundingClientRect();
+      if (
+          boundingBox.top >= 0 &&
+          boundingBox.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+      ) {
+          image.classList.add('active');
+      } else {
+          image.classList.remove('active');
+      }
+  });
 });

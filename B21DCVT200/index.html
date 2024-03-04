@@ -12,12 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="">
+    <link rel="icon" href="./img/logoptit.png">
     <!-- main css -->
     <link rel="stylesheet" href="./css/main.css" />
     <title>Portfolio</title>
   </head>
   <body>
+  <section id="overlay"></section>
+  <div class="portfolio-title">Portfolio</div>
     <header>
       <div class="container">
         <nav class="navbar">
@@ -27,14 +29,11 @@
           </div>
           <!-- links -->
           <ul class="navbar__links">
-            <li class="navbar__link"><a href="#works">Work</a></li>
-            <li class="navbar__link"><a href="#things">About</a></li>
-            <li class="navbar__link"><a href="#works">Resume</a></li>
+            <li class="navbar__link"><a href="#banner">Home</a></li>
+            <li class="navbar__link"><a href="#things">Info</a></li>
+            <li class="navbar__link"><a href="#works">More About Me</a></li>
             <a href="#footer"><button class="navbar__btn">Contact</button></a>
           </ul>
-          <!-- menu button -->
-          <div class="navbar__icons">
-            <div class="navbar__icon"></div>
           </div>
         </nav>
       </div>
@@ -44,68 +43,67 @@
       <div class="container">
         <!-- img -->
         <div class="avatar">
-          <img id="ava" src="./img/avatar.jpg" alt="" />
+          <img src="./img/avatar.jpg" alt="" />
         </div>
         <!-- heading -->
-          <h1>Xin chào, tôi là Nguyễn Công Hoàn</h1>
+       
+          <h1>Hello, I'm Nguyen Cong Hoan</h1>
           <p id="introduce">
             Sinh viên năm 3 ngành Điện tử Viễn Thông tại Học viện Công Nghệ Bưu Chính Viễn Thông
           </p>
-          <!-- <a href="#"><button class="banner__btn">View More</button></a> -->
         </div>
-      </div>
     </section>  
     <!-- things -->
     <section id="things">
       <div class="container">
         <!-- dec -->
         <div class="things__dec">
-          <img src="./img/things-dec-l.png" alt="illustration of leaf" />
+          <img src="./img/things-dec-l.png" alt="" />
         </div>
         <!-- dec -->
         <div class="things__dec">
-          <img src="./img/things-dec-r.png" alt="illustration of leaf" />
+          <img src="./img/things-dec-r.png" alt="" />
         </div>
         <!-- heading -->
-        <h2>Things I Do</h2>
+        <h2>Giới thiệu</h2>
         <!-- item 1 -->
         <div class="things__item">
           <!-- img -->
-          <img src="./img/things-item-1.png" alt="illustration of women" />
+          <img src="./img/things-item-1.png" alt="" />
           <!-- text -->
           <div class="things__item--heading">
-            <h3>Giới thiệu</h3>
-            <p>Ngày sinh: 12/02/2003</p>
-            <p>Địa chỉ: Số 59, ngõ 42 Thành Công, Ba Đình, Hà Nội</p>
-            <p>Giới tính: Nam</p>
+            <h3>Information</h3>
+            <p>Date Of Birth: 12/02/2003</p>
+            <p>Address: No.59, 42 lane Thanh Cong Str., Ba Dinh Dist., Ha Noi</p>
+            <p>Sex: Male</p>
           </div>
         </div>
         <!-- item 2 -->
         <div class="things__item">
           <!-- img -->
-          <img src="./img/things-item-2.png" alt="illustration of women" />
+          <img src="./img/things-item-2.png" alt="" />
           <!-- text -->
           <div class="things__item--heading">
-            <h3>Trình độ học vấn</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              consequatur provident, culpa quaerat fugit dolorem illum
-              repellendus quas quasi obcaecati quia aliquid odit! Vitae, non?
-            </p>
+            <h3>Education</h3>
+            <p>2009-2014: Thanh Cong B primary school</p>
+            <p>2014-2018: Thanh Cong Secondary School</p>
+            <p>2018-2021: Nguyen Trai-Ba Dinh High School</p>
+            <p>2021-now: Posts & Telecoms Institute of Technology</p>
           </div>
         </div>
         <!-- item 3 -->
         <div class="things__item">
           <!-- img -->
-          <img src="./img/things-item-3.png" alt="illustration of computer" />
+          <img src="./img/things-item-3.png" alt="" />
           <!-- text -->
           <div class="things__item--heading">
-            <h3>Kỹ năng</h3>
-            <p>- Quản lý thời gian hiệu quả</p>
-            <p>- Kỹ năng giao tiếp</p>
-            <p>- Kỹ năng thuyết trình</p>
-            <p>- Kỹ năng làm việc nhóm</p>
-            <p>- Kỹ năng tạo lập văn bản</p>
+            <h3>Skills</h3>
+            <p>- Effective time-managing</p>
+            <p>- Communication skill</p>
+            <p>- Presentation skill</p>
+            <p>- Ability to work in group</p>
+            <p>- Leading skill</p>  
+            <p>- C/C++</p>
           </div>
         </div>
       </div>
@@ -115,26 +113,26 @@
       <div class="container">
         <!-- dec -->
         <div class="works__dec">
-          <img src="./img/work-dec.png" alt="illustration of leaf" />
+          <img src="./img/work-dec.png" alt="" />
         </div>
         <div class="works__dec">
           <img src="./img/work-dec.png" alt="illustration of leaf" />
         </div>
         <!-- heading -->
-        <h2>Recent Works</h2>
+        <h2>More About Me</h2>
         <!-- img -->
         <div class="works__img">
           <div class="works__img--single">
-            <img src="./img/work-1.png" alt="bag" />
+            <img class="" src="./img/work-1.png" alt="" />
           </div>
           <div class="works__img--single">
-            <img src="./img/work-2.png" alt="plate" />
+            <img src="./img/work-2.png" alt="" />
           </div>
           <div class="works__img--single">
-            <img src="./img/work-3.png" alt="women" />
+            <img src="./img/work-3.png" alt="" />
           </div>
           <div class="works__img--single">
-            <img src="./img/work-4.png" alt="piggy bank" />
+            <img src="./img/work-4.png" alt="" />
           </div>
         </div>
       </div>
@@ -153,7 +151,7 @@
         </div>
         <!-- heading -->
         <div class="footer__heading">
-          <h1>Hãy liên hệ với tôi</h1>
+          <h1>Contact</h1>
           <!-- contact -->
           <div class="footer__contact">
             <a href="tel:0336890011">
@@ -166,11 +164,12 @@
             </a>
             <a  href="https://www.facebook.com/Knoyss/">
             <i class="fa-brands fa-facebook"></i>
-            <p>Nguyễn Công Hoàn</p>
             </a>
             <a href="https://www.instagram.com/idkabtme.12/">
             <i class="fa-brands fa-instagram"></i>
-            <p>idkabtme.12</p>
+            </a>
+            <a href="https://github.com/HoanTheBoy">
+              <i class="fa-brands fa-github"></i>
             </a>
           </div>
         </div>
