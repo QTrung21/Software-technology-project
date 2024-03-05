@@ -73,6 +73,8 @@ html{
     justify-content: space-evenly;
 }
 
+/* Trung */
+
 .Trung{
     border-style: solid;
     border-radius: 0.5rem;
@@ -106,3 +108,150 @@ html{
     text-transform: uppercase;
     padding-top: 20px;
 }
+
+/* Duy */
+
+.Duy{
+    border-style: solid;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    background-color: #fff;
+    color: #000;
+}
+
+.Duy img{
+    margin-top: 10px;
+    height: 220px;
+    width: 220px;
+    border: solid;
+}
+
+.Duy div{
+    padding: 10px 0;
+}
+
+.Duy a{
+    text-transform: uppercase;
+    border-style: solid;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5rem;
+}
+
+.Duy h3{
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+/* Hoan */
+
+.Hoan{
+    border-style: solid;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    background-color: #fff;
+    color: #000;
+}
+
+.Hoan img{
+    margin-top: 10px;
+    height: 220px;
+    width: 220px;
+    border: solid;
+}
+
+.Hoan div{
+    padding: 10px 0;
+}
+
+.Hoan a{
+    text-transform: uppercase;
+    border-style: solid;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5rem;
+}
+
+.Hoan h3{
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+/* Duc */
+
+.Duc{
+    border-style: solid;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    background-color: #fff;
+    color: #000;
+}
+
+.Duc img{
+    margin-top: 10px;
+    height: 220px;
+    width: 220px;
+    border: solid;
+}
+
+.Duc div{
+    padding: 10px 0;
+}
+
+.Duc a{
+    text-transform: uppercase;
+    border-style: solid;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5rem;
+}
+
+.Duc h3{
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+/* Dong */
+
+.Dong{
+    border-style: solid;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    background-color: #fff;
+    color: #000;
+}
+
+.Dong img{
+    margin-top: 10px;
+    height: 220px;
+    width: 220px;
+    border: solid;
+}
+
+.Dong div{
+    padding: 10px 0;
+}
+
+.Dong a{
+    text-transform: uppercase;
+    border-style: solid;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5rem;
+}
+
+.Dong h3{
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+
+
