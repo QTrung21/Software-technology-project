@@ -64,6 +64,18 @@ html{
   display: inline-block;
 }
 
+.navbar li:active a{
+  color: #000;
+  background-color: #ccc;
+  display: inline-block;
+}
+
+.navbar li:focus a{
+  color: #000;
+  background-color: #ccc;
+  display: inline-block;
+}
+
   
 .navbar {
   margin-left: 50px;
@@ -146,6 +158,37 @@ html{
   text-transform: uppercase;
   border-style: solid;
   padding: 10px;
+  border-radius: 20%;
+}
+
+.about-me-button::after {
+  content: "";
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #212121;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.about-me-button::before {
+  content: "";
+  transform-origin: center;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #212121;
+  transition: 0.5s;
+}
+
+.about-me-button:hover::before, button:hover::after {
+  transform: scale(0)
+}
+
+.about-me-button:hover {
+  box-shadow: inset 0px 0px 25px #1479EA;
 }
 
 /* Education */
