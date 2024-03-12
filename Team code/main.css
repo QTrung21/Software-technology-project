@@ -15,6 +15,8 @@ html{
     --text-color: white;
 }
 
+/* Header */
+
 .header {
     position: fixed;
     height: 75px;
@@ -73,8 +75,6 @@ html{
     justify-content: space-evenly;
 }
 
-/* Trung */
-
 .Trung{
     border-style: solid;
     border-radius: 0.5rem;
@@ -108,8 +108,6 @@ html{
     text-transform: uppercase;
     padding-top: 20px;
 }
-
-/* Duy */
 
 .Duy{
     border-style: solid;
@@ -145,8 +143,6 @@ html{
     padding-top: 20px;
 }
 
-/* Hoan */
-
 .Hoan{
     border-style: solid;
     border-radius: 0.5rem;
@@ -180,8 +176,6 @@ html{
     text-transform: uppercase;
     padding-top: 20px;
 }
-
-/* Duc */
 
 .Duc{
     border-style: solid;
@@ -217,8 +211,6 @@ html{
     padding-top: 20px;
 }
 
-/* Dong */
-
 .Dong{
     border-style: solid;
     border-radius: 0.5rem;
@@ -252,6 +244,10 @@ html{
     text-transform: uppercase;
     padding-top: 20px;
 }
+
+/* Contact */
+
+
 
 
 
