@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     border: none;
@@ -6,43 +6,46 @@
     text-decoration: none;
 }
 
-.head{
-    width: 100%px;
-    height: 354px;
+main {
+    font-family: "Open Sans";
 }
-
-.head .head-content{
+  
+:root {
+    --bg-color: black;
+    --text-color: white;
+}
+  
+.header {
     position: fixed;
-    width: 100%;
-    height: 354px;
-    top: 0;
+    height: 75px;
+    display: flex;
+    background-color: var(--bg-color);
     left: 0;
-    background: linear-gradient(
-        180deg,
-        rgb(172.13, 170.69, 170.69) 0%,
-        rgb(206.57, 204.17, 204.17) 64.1%,
-        rgba(217.81, 215.09, 215.09, 0.81) 71.99%,
-        rgba(255, 255, 255, 0) 100%
-    );
+    right: 0;
+    padding: 0px 10%;
+    justify-content: space-between;
 }
-
-#head-text{
-    align-items: center;
-    width: 284px;
-    height: 66px;
+  
+.logo {
+    line-height: 75px;
 }
-
-.head .head-content #head-text .text{
-    position: fixed;
-    width: 300px;
-    top: 0;
-    left: 0;
-    font-family: "Open Sans-ExtraBold", Helvetica;
-    font-weight: 800;
-    color: #011334;
-    font-size: 48px;
-    letter-spacing: 0;
-    line-height: 300px;
-    white-space: nowrap;
+  
+.navbar a {
+    line-height: 75px;
+    color: var(--text-color);
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 20px;
+    font-weight: 600;
 }
-
+  
+.navbar {
+    margin-left: 50px;
+}
+  
+.navbar a:hover {
+    color: #000;
+    background-color: #ccc;
+    display: inline-block;
+}
+  
