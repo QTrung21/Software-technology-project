@@ -8,6 +8,7 @@
 
 html{
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -15,7 +16,9 @@ html{
     --text-color: white;
 }
 
-.header {
+/* -- NAVBAR -- */
+
+.navbar_container {
     position: fixed;
     height: 75px;
     display: flex;
@@ -53,6 +56,10 @@ html{
 }
 
 .navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     margin-left: 50px;
 }
 
@@ -61,3 +68,48 @@ html{
     background-color: #ccc;
     display: inline-block;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    height: 100vh;
+}
+
+/* -- GAME DISPLAY -- */
+
+.game_container{
+    padding-top: 75px;
+    margin: 0 0 0 0;
+    overflow: hidden;
+    height: 100%;
+    width: auto ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_list {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    transition: transform 0.5s ease-in-out;
+  }
+
+.game_item {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 350px;
+    background-color: lightblue;
+    /* margin-right: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin: 0 20px;
+  }
+
+
