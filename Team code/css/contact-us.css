@@ -6,24 +6,28 @@
     text-decoration: none;
 }
 
-main {
-    font-family: "Open Sans";
+html {
+    background-color: var(--bg-color);
 }
   
 :root {
-    --bg-color: black;
-    --text-color: white;
+    --bg-color: #ccc;
+    --text-color: black;
 }
-  
+
+/* Header */
+
 .header {
+    z-index: 1;
     position: fixed;
     height: 75px;
     display: flex;
-    background-color: var(--bg-color);
     left: 0;
     right: 0;
     padding: 0px 10%;
     justify-content: space-between;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
   
 .logo {
@@ -44,8 +48,61 @@ main {
 }
   
 .navbar a:hover {
-    color: #000;
+    color: black;
     background-color: #ccc;
     display: inline-block;
 }
-  
+
+.navbar:focus {
+    background-color: #ccc;
+    display: inline-block;
+}
+
+/* Contact us */
+
+.contact-us {
+    position: absolute;
+    margin-top: 75px;
+    width: 100%;
+}
+
+.contact-us h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.contact-us .content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-style: solid;
+    background-color: whitesmoke;
+}
+
+.in4 {
+    font-size: 20px;
+}
+
+.in4 i {
+    margin: 10px;
+}
+
+#user-in4 {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-in4 input {
+    height: 50px;
+    width: 300px;
+    margin: 10px;
+    border-style: solid;
+}
+
+.send {
+    margin-left: 50px;
+    border-style: solid;
+    border-radius: 30%;
+}
+

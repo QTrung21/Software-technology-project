@@ -7,36 +7,26 @@
 }
 
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 :root{
     --bg-color: black;
-    --text-color: white;
+    --text-color: black;
 }
+
+/* Header */
 
 .header {
     position: fixed;
     height: 75px;
     display: flex;
-    background-color: var(--bg-color);
     left: 0;
     right: 0;
     padding: 0px 10%;
     justify-content: space-between;
-}
-
-.search{
-    line-height: 75px;
-    color: var(--text-color);
-    font-size: 20px;
-    font-size: 600;
-}
-
-.searchbar{
-    line-height: 75px;
-    border-style: solid;
-    
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
 
 .logo{
@@ -64,7 +54,7 @@ html{
 
 /* About us */
 
-.about-us{
+.about-us {
     height: 100vh;
     background-color: #ccc;
     display: flex;
@@ -75,7 +65,7 @@ html{
 
 /* Trung */
 
-.Trung{
+.Trung {
     border-style: solid;
     border-radius: 0.5rem;
     text-align: center;
@@ -85,18 +75,18 @@ html{
     color: #000;
 }
 
-.Trung img{
+.Trung img {
     margin-top: 10px;
     height: 220px;
     width: 220px;
     border: solid;
 }
 
-.Trung div{
+.Trung div {
     padding: 10px 0;
 }
 
-.Trung a{
+.Trung a {
     text-transform: uppercase;
     border-style: solid;
     font-size: 15px;
@@ -104,14 +94,14 @@ html{
     border-radius: 5rem;
 }
 
-.Trung h3{
+.Trung h3 {
     text-transform: uppercase;
     padding-top: 20px;
 }
 
 /* Duy */
 
-.Duy{
+.Duy {
     border-style: solid;
     border-radius: 0.5rem;
     text-align: center;
@@ -121,18 +111,18 @@ html{
     color: #000;
 }
 
-.Duy img{
+.Duy img {
     margin-top: 10px;
     height: 220px;
     width: 220px;
     border: solid;
 }
 
-.Duy div{
+.Duy div {
     padding: 10px 0;
 }
 
-.Duy a{
+.Duy a {
     text-transform: uppercase;
     border-style: solid;
     font-size: 15px;
@@ -140,14 +130,14 @@ html{
     border-radius: 5rem;
 }
 
-.Duy h3{
+.Duy h3 {
     text-transform: uppercase;
     padding-top: 20px;
 }
 
 /* Hoan */
 
-.Hoan{
+.Hoan {
     border-style: solid;
     border-radius: 0.5rem;
     text-align: center;
@@ -157,18 +147,18 @@ html{
     color: #000;
 }
 
-.Hoan img{
+.Hoan img {
     margin-top: 10px;
     height: 220px;
     width: 220px;
     border: solid;
 }
 
-.Hoan div{
+.Hoan div {
     padding: 10px 0;
 }
 
-.Hoan a{
+.Hoan a {
     text-transform: uppercase;
     border-style: solid;
     font-size: 15px;
@@ -176,14 +166,14 @@ html{
     border-radius: 5rem;
 }
 
-.Hoan h3{
+.Hoan h3 {
     text-transform: uppercase;
     padding-top: 20px;
 }
 
 /* Duc */
 
-.Duc{
+.Duc {
     border-style: solid;
     border-radius: 0.5rem;
     text-align: center;
@@ -193,18 +183,18 @@ html{
     color: #000;
 }
 
-.Duc img{
+.Duc img {
     margin-top: 10px;
     height: 220px;
     width: 220px;
     border: solid;
 }
 
-.Duc div{
+.Duc div {
     padding: 10px 0;
 }
 
-.Duc a{
+.Duc a {
     text-transform: uppercase;
     border-style: solid;
     font-size: 15px;
@@ -212,14 +202,14 @@ html{
     border-radius: 5rem;
 }
 
-.Duc h3{
+.Duc h3 {
     text-transform: uppercase;
     padding-top: 20px;
 }
 
 /* Dong */
 
-.Dong{
+.Dong {
     border-style: solid;
     border-radius: 0.5rem;
     text-align: center;
@@ -229,18 +219,18 @@ html{
     color: #000;
 }
 
-.Dong img{
+.Dong img {
     margin-top: 10px;
     height: 220px;
     width: 220px;
     border: solid;
 }
 
-.Dong div{
+.Dong div {
     padding: 10px 0;
 }
 
-.Dong a{
+.Dong a {
     text-transform: uppercase;
     border-style: solid;
     font-size: 15px;
@@ -248,7 +238,7 @@ html{
     border-radius: 5rem;
 }
 
-.Dong h3{
+.Dong h3 {
     text-transform: uppercase;
     padding-top: 20px;
 }
