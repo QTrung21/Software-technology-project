@@ -87,7 +87,6 @@ height: 140px;
 object-fit: cover;
 }
 
-/* menu */
 .navbar__links {
 position: fixed;
 top: 0;
@@ -184,14 +183,6 @@ color: var(--gray);
 margin-bottom: 3em;
 }
 
-.things__dec {
-position: absolute;
-top: 0;
-left: 0;
-transform: translateX(-60%);
-z-index: -1;
-}
-
 .things__dec:nth-child(2) {
 top: initial;
 left: initial;
@@ -203,10 +194,13 @@ z-index: -1;
 
 .things__item {
 margin: 10em 0;
+padding-bottom: 10px;
 }
 
 .things__item img {
-padding-bottom: 10px;
+height: 400px;
+width: 400px;
+padding-bottom: 5px;
 }
 
 .things__item--heading {
@@ -220,6 +214,7 @@ line-height: 2em;
 max-width: 300px;
 margin: 0 auto;
 padding-top: 1em;
+box-sizing: border-box;
 }
 
 @media (min-width: 62em) {
@@ -228,10 +223,11 @@ padding-top: 1em;
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    padding-bottom: 20px;
 }
 .things__item img {
-    width: 40%;
-    padding-bottom: 0;
+    height: 400px;
+    width: 400px;
 }
 .things__item--heading {
     width: 45%;
@@ -253,89 +249,13 @@ padding-top: 1em;
 }
 }
 
-/* === Works === */
-#works {
-padding-top: 10em;
-position: relative;
-overflow-x: hidden;
-}
-
-#works h2 {
-text-align: center;
-color: var(--gray);
-}
-
-.works__dec {
-position: absolute;
-top: 0;
-left: 0;
-transform: translateX(-60%);
-z-index: -1;
-}
-.works__dec:nth-child(2) {
-position: absolute;
-top: initial;
-left: initial;
-bottom: 15%;
-right: 0;
-transform: translateX(60%);
-z-index: -1;
-}
-
-.works__img--single {
-margin: 2em 0;
-}
-
-.works__img--single:nth-child(odd) {
-padding-top: 5em;
-}
-
-.works__img--single:nth-child(3) {
-margin-top: -5em;
-}
-
-.works__btn {
-text-align: center;
-margin-top: 8em;
-}
-
-.works__btn button {
-font-size: 1rem;
-}
-
-@media (min-width: 62em) {
-#works h2 {
-    margin-bottom: 3em;
-}
-.works__img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.works__img--single {
-    margin: 0 5em;
-    width: 35%;
-}
-.works__img--single:nth-child(3) {
-    margin-top: 0;
-}
-}
-
 /* === Footer === */
 #footer {
 overflow: hidden;
 position: relative;
-height: 100vh;
+height: 30vh;
 display: flex;
 align-items: center;
-}
-
-.footer__img {
-position: absolute;
-top: 0;
-right: 0;
-transform: translateX(25%);
-z-index: -1;
 }
 
 .footer__heading {
@@ -347,21 +267,13 @@ color: var(--gray);
 
 .footer__contact {
 width: 80% ;
-margin-top: 2em;
+margin-top: 1em;
 display: flex;
 }
 
 .footer__contact a {
 text-decoration: none;
 color: var(--gray);
-}
-
-.footer__dec {
-position: absolute;
-bottom: 0;
-left: 0;
-transform: translateX(-45%);
-z-index: -1;
 }
 
 @media (min-width: 62em) {

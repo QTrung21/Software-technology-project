@@ -1,0 +1,162 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: black;
+  --text-color: white;
+}
+
+/* -- NAVBAR -- */
+
+.navbar_container {
+  position: fixed;
+  height: 75px;
+  display: flex;
+  background-color: var(--bg-color);
+  left: 0;
+  right: 0;
+  padding: 0px 10%;
+  justify-content: space-between;
+}
+
+.search {
+  line-height: 75px;
+  color: var(--text-color);
+  font-size: 20px;
+  font-size: 600;
+}
+
+.searchbar {
+  line-height: 75px;
+  border-style: solid;
+}
+
+.logo {
+  line-height: 75px;
+}
+
+.navbar a {
+  line-height: 75px;
+  color: var(--text-color);
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 50px;
+}
+
+.navbar a:hover {
+  color: #000;
+  background-color: #ccc;
+  display: inline-block;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  height: 100vh;
+}
+
+/* -- GAME DISPLAY -- */
+
+.game_container {
+  padding-top: 75px;
+  margin: 0 0 0 0;
+  overflow: hidden;
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.slider {
+  width: 1300px;
+  max-width: 100vw;
+  height: 700px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.slider .list {
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+.slider .list img {
+  width: 1300px;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+.slider .buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.slider .buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+.slider .dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.slider .dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.slider .dots li.active {
+  width: 30px;
+}
+@media screen and (max-width: 768px) {
+  .slider {
+    height: 400px;
+  }
+}
