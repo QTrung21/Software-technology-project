@@ -1,45 +1,41 @@
-window.addEventListener('DOMContentLoaded', function() {
-    const gameList = document.getElementById('game_list');
-    let currentIndex = 0;
-    const items = gameList.querySelectorAll('.game_item');
-    const totalItems = items.length;
-    let animationID;
-  
-    function moveCarousel() {
-      currentIndex++;
-      if (currentIndex === totalItems) {
-        currentIndex = 0;
-      }
-      const newPosition = -currentIndex * items[0].offsetWidth;
-      animateCarousel(newPosition);
-    }
-  
-    function animateCarousel(newPosition) {
-      let currentPosition = parseFloat(getComputedStyle(gameList).getPropertyValue('transform').split(',')[4]);
-      const distance = newPosition - currentPosition;
-      const speed = distance / 15; // Tốc độ chuyển động
-  
-      function animate() {
-        currentPosition += speed;
-        if ((speed > 0 && currentPosition >= newPosition) || (speed < 0 && currentPosition <= newPosition)) {
-          cancelAnimationFrame(animationID);
-        } else {
-          gameList.style.transform = `translateX(${currentPosition}px)`;
-          animationID = requestAnimationFrame(animate);
-        }
-      }
-  
-      animate();
-    }
-  
-    // Thiết lập tự động di chuyển
-    setInterval(moveCarousel, 1500);
-  
-    // Thêm sự kiện click vào mỗi phần tử trong danh sách trò chơi
-    items.forEach(item => {
-      item.addEventListener('click', () => {
-        alert(`Bạn đã chọn ${item.textContent}`);
-      });
-    });
+let slider = document.querySelector(".slider .list");
+let items = document.querySelectorAll(".slider .list .item");
+let next = document.getElementById("next");
+let prev = document.getElementById("prev");
+let dots = document.querySelectorAll(".slider .dots li");
+
+let lengthItems = items.length - 1;
+let active = 0;
+next.onclick = function () {
+  active = active + 1 <= lengthItems ? active + 1 : 0;
+  reloadSlider();
+};
+prev.onclick = function () {
+  active = active - 1 >= 0 ? active - 1 : lengthItems;
+  reloadSlider();
+};
+let refreshInterval = setInterval(() => {
+  next.click();
+}, 3000);
+function reloadSlider() {
+  slider.style.left = -items[active].offsetLeft + "px";
+  //
+  let last_active_dot = document.querySelector(".slider .dots li.active");
+  last_active_dot.classList.remove("active");
+  dots[active].classList.add("active");
+
+  clearInterval(refreshInterval);
+  refreshInterval = setInterval(() => {
+    next.click();
+  }, 3000);
+}
+
+dots.forEach((li, key) => {
+  li.addEventListener("click", () => {
+    active = key;
+    reloadSlider();
   });
-  
+});
+window.onresize = function (event) {
+  reloadSlider();
+};
