@@ -6,8 +6,8 @@
   text-decoration: none;
 }
 
-body {
-  font-family: "Open Sans";
+html {
+  
 }
 
 :root {
@@ -15,15 +15,18 @@ body {
   --text-color: white;
 }
 
+/* Header */
+
 .header {
   position: fixed;
   height: 75px;
   display: flex;
-  background-color: var(--bg-color);
   left: 0;
   right: 0;
   padding: 0px 10%;
   justify-content: space-between;
+  background-color: var(--bg-color);
+  opacity: 70%;
 }
 
 .logo {
@@ -53,6 +56,9 @@ body {
   width: 1518px;
   height: 721px;
 }
+
+/* Home */
+
 /* block-1 */
 #block-1 {
 }
