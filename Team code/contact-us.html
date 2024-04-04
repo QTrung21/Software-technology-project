@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/contact-us.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
 </head>
 <body>
     <header class="header">
@@ -16,29 +16,56 @@
           <a href="about-us.html">About us</a>
           <a href="#news">News</a>
           <a href="contact-us.html">Contact us</a>
-          <a href="#search"><i class="bx bx-search-alt-2"></i></a>
-          <a href="#login"><i class="bx bx-user"></i></a>
+          <a href="#search"><i class="fa fa-search" aria-hidden="true"></i></a>
+          <a href="#login"><i class="fa fa-user" aria-hidden="true"></i></a>
         </nav>
     </header>
 
     <main>
         <section class="contact-us" id="contact-us">
-            <h1>Contact us</h1>
             <div class="content">
-                <div class="in4">
-                    <i class='bx bxs-home'></i>Address: Posts and Telecommunications Institute of Technology</h3><br>
-                    <i class='bx bx-phone' ></i>Phone Number: +84968xxxxxx<br>
-                    <i class='bx bx-envelope'></i>Email: example@gmail.com<br>
+                <h1>Contact us</h1>
+                <p>Hello, we are Group 11. We are students of PTIT and this is our small project in Software Engineering. </p>
+            </div>
+            <div class="container">
+                <div class="contact-in4">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Posts and Telecommunications Institute of Technology</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+0968xxxx12</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>example@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="form">
+                <div class="contact-form">
                     <form>
-                        <div id="user-in4">
-                            <input class="name" type="text" placeholder="Name" required="Name">
-                            <input class="email" type="text" placeholder="Email" required="Email">
-                            <input class="message" type="text" placeholder="Message" required="Message">
+                        <div class="input-box">
+                            <input type="text" placeholder="Name" required="Name">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Email" required="Email">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Message" required="Message">
+                        </div>
+                        <div class="input-box">
+                            <button type="submit">SEND</button>
                         </div>
                     </form>
-                    <button class="send" type="submit">SEND</button>
                 </div>
             </div>
         </section>

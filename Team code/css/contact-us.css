@@ -61,48 +61,94 @@ html {
 /* Contact us */
 
 .contact-us {
-    position: absolute;
-    margin-top: 75px;
-    width: 100%;
-}
-
-.contact-us h1 {
-    text-align: center;
-    font-size: 100px;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contact-us .content {
-    margin-top: 50px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact-us .content h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.contact-us .content p {
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+.container {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    border-style: solid;
-    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
-.in4 {
-    font-size: 20px;
-}
-
-.in4 i {
-    margin: 10px;
-}
-
-#user-in4 {
+.container .contact-in4 {
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-#user-in4 input {
-    height: 50px;
-    width: 300px;
-    margin: 10px;
-    border-style: solid;
+.container .contact-in4 .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
 }
 
-.send {
-    margin-left: 50px;
-    border-style: solid;
-    border-radius: 30%;
+.container .contact-in4 .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
 }
 
+.container .contact-in4 .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: 300;
+    flex-direction: column;
+}
+
+.container .contact-in4 .box .text h3 {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.contact-form {
+    border-style: solid;
+    width: 40%;
+    padding: 40px;
+    background: var(--bg-color);
+}
+
+.contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form .input-box input {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 20px;
+    margin: 10px 0;
+    border-style: solid;
+    border-bottom: 5px solid #333;
+}
