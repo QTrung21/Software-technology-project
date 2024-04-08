@@ -33,6 +33,10 @@ html {
   
 .logo {
     line-height: 75px;
+    color: var(--text-color);
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
 }
   
 .navbar a {
@@ -50,7 +54,8 @@ html {
   
 .navbar a:hover {
     color: black;
-    background-color: #ccc;
+    background-color: white;
+    backdrop-filter: blur(10px);
     display: inline-block;
 }
 
@@ -97,7 +102,7 @@ video {
 
 .contact-us .content p {
     margin-top: 10px;
-    font-weight: 300;
+    font-weight: 500;
     color: var(--text-color);
     font-size: 17px;
 }
@@ -163,7 +168,8 @@ video {
     border-radius: 5%;
     border-color: black;
     z-index: 1;
-    background: transparent;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
 
 .contact-form .input-box {
@@ -180,15 +186,14 @@ video {
     border-style: solid;
 }
 
-.contact-form .input-box input #message {
-    width: 100%;
-    height: 200px;
-}
-
 .contact-form .input-box button {
     border-style: solid;
     padding: 10px;
     border-radius: 10px;
     font-weight: bold;
     justify-content: center;
+}
+
+.contact-form .input-box #message {
+    height: 120px;
 }
