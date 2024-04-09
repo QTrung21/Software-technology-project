@@ -68,4 +68,26 @@
 #opening img {
   height: auto;
   width: 100%;
+  position: relative;
+  display: block;
+  z-index: -1;
+}
+
+#opening img button {
+    position: absolute;
+    left: 155px;
+
+}
+.btn-inside {
+    position: absolute;
+    left: 155px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
