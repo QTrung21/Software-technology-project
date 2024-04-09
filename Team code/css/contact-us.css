@@ -16,7 +16,7 @@ html {
     --text-color: black;
 }
 
-/* Header */
+/* -- Header -- */
 
 .header {
     z-index: 1;
@@ -56,11 +56,6 @@ html {
     color: black;
     background-color: white;
     backdrop-filter: blur(10px);
-    display: inline-block;
-}
-
-.navbar:focus {
-    background-color: #ccc;
     display: inline-block;
 }
 
@@ -194,6 +189,11 @@ video {
     justify-content: center;
 }
 
-.contact-form .input-box #message {
+.contact-form .input-box textarea {
+    margin: 10px 0;
+    padding: 5px 0;
+    font-size: 20px;
+    border-style: solid;
+    width: 100%;
     height: 120px;
 }
