@@ -84,6 +84,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--bg-color);
 }
 
 .game-list {
@@ -149,6 +150,7 @@ a:hover {
 a:hover {
   color: #e73700;
 }
+
 h2 {
   margin-bottom: 48px;
   padding-bottom: 16px;
@@ -172,11 +174,9 @@ button {
 /* -------- Landing page ------- */
 
 .game-section {
-  padding: 75px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 110px 50px 50px 45px;  
 }
+
 .game-section .owl-stage {
   margin: 15px 0;
   display: flex;
@@ -186,7 +186,7 @@ button {
 .game-section .item {
   margin: 0 15px 60px;
   width: 320px;
-  height: 400px;
+  height: 500px;
   display: flex;
   display: -webkit-flex;
   align-items: flex-end;
@@ -219,7 +219,7 @@ button {
 
 .game-section .item-desc {
   padding: 0 24px 12px;
-  color: #fff;
+  color: var(--bg-color);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -334,9 +334,14 @@ button {
 
   /* -------- Landing page ------- */
   .game-section {
+    height: 100hv;
+    width: 100%;
     padding: 30px 15px 20px;
   }
   .game-section .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 10px 40px;
     width: 200px;
     height: 280px;
