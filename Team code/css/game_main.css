@@ -10,7 +10,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   background: transparent;
-  background-color: var(--bg-color);
+  background-color:#151f28
 }
 
 :root {
@@ -60,7 +60,7 @@ html {
 
 .navbar a:hover {
   color: var(--bg-color);
-  background-color: var(--text-color);
+  background-color: transparent;
   display: inline-block;
   text-decoration: none;
 }
@@ -174,7 +174,7 @@ button {
 /* -------- Landing page ------- */
 
 .game-section {
-  padding: 110px 50px 50px 45px;  
+  padding: 130px 50px 50px 45px;  
 }
 
 .game-section .owl-stage {
@@ -185,8 +185,8 @@ button {
 
 .game-section .item {
   margin: 0 15px 60px;
-  width: 320px;
-  height: 500px;
+  width: 380px;
+  height: 510px;
   display: flex;
   display: -webkit-flex;
   align-items: flex-end;
@@ -249,7 +249,7 @@ button {
 }
 
 .game-section .owl-theme.custom-carousel .owl-dots {
-  margin-top: -20px;
+  margin-top: -10px;
   position: relative;
   z-index: 5;
 }
@@ -269,7 +269,7 @@ button {
 
   /* -------- Landing page ------- */
   .game-section {
-    padding: 75px 30px;
+    padding: 75px 10px;
   }
   .game-section .item {
     margin: 0 12px 60px;
@@ -356,4 +356,54 @@ button {
     transform: translateY(calc(100% - 42px));
     -webkit-transform: translateY(calc(100% - 42px));
   }
+}
+
+.owl-carouselcustom-carouselowl-theme {
+  position: relative;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #333;
+}
+
+.owl-prev {
+  left: 10px;
+}
+
+.owl-next {
+  right: 10px;
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.owl-nav button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+.owl-prev {
+  left: 20px;
+}
+
+.owl-next {
+  right: 20px;
 }
