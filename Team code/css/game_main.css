@@ -71,7 +71,7 @@ body {
   height: auto;
   width: 100%;
   height: 100vh;
-  background-color: var(--bg-color);
+  background-color: #C0C0C0;
 }
 
 .game_container {
@@ -84,6 +84,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #C0C0C0;
 }
 
 .game-list {
@@ -128,10 +129,10 @@ img {
   max-width: 100%;
   border: 0px;
 }
-ul,
-ol {
+ul,ol {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: inherit;

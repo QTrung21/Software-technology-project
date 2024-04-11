@@ -4,10 +4,11 @@
     border: none;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
-    
+    background: transparent;
 }
 
 :root{
@@ -18,6 +19,7 @@ html{
 /* Header */
 
 .header {
+    z-index: 1;
     position: fixed;
     height: 75px;
     display: flex;
@@ -28,12 +30,16 @@ html{
     background-color: transparent;
     backdrop-filter: blur(10px);
 }
-
-.logo{
+  
+.logo {
     line-height: 75px;
+    color: var(--text-color);
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
 }
-
-.navbar a{
+  
+.navbar a {
     line-height: 75px;
     color: var(--text-color);
     display: inline-block;
@@ -41,204 +47,218 @@ html{
     font-size: 20px;
     font-weight: 600;
 }
-
-.navbar{
+  
+.navbar {
     margin-left: 50px;
 }
-
-.navbar a:hover{
-    color: #000;
-    background-color: #ccc;
+  
+.navbar a:hover {
+    color: black;
+    background-color: white;
+    backdrop-filter: blur(10px);
     display: inline-block;
 }
 
 /* About us */
 
-.about-us {
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100vh;
-    background-color: #ccc;
+    object-fit: cover;
+    opacity: 75%;
+}
+
+.about-us .in4 {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: row;
-    padding-top: 90px;
     justify-content: space-evenly;
+}
+
+.about-us .in4 .card {
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    color: whitesmoke;
+    margin-top: 200px;
+}
+
+.about-us .in4 .card a {
+    color: white;
 }
 
 /* Trung */
 
-.Trung {
+#Trung {
     border-style: solid;
     border-radius: 0.5rem;
     text-align: center;
     width: 250px;
     height: 350px;
-    background-color: #fff;
-    color: #000;
 }
 
-.Trung img {
+#Trung img {
     margin-top: 10px;
     height: 220px;
     width: 220px;
     border: solid;
 }
 
-.Trung div {
+#Trung div {
     padding: 10px 0;
 }
 
-.Trung a {
+#Trung a {
     text-transform: uppercase;
     border-style: solid;
-    font-size: 15px;
+    font-size: 12px;
     padding: 5px;
     border-radius: 5rem;
 }
 
-.Trung h3 {
+#Trung h3 {
     text-transform: uppercase;
     padding-top: 20px;
 }
 
 /* Duy */
 
-.Duy {
+#Duy {
     border-style: solid;
     border-radius: 0.5rem;
     text-align: center;
     width: 250px;
     height: 350px;
-    background-color: #fff;
-    color: #000;
 }
 
-.Duy img {
+#Duy img {
     margin-top: 10px;
     height: 220px;
     width: 220px;
     border: solid;
 }
 
-.Duy div {
+#Duy div {
     padding: 10px 0;
 }
 
-.Duy a {
+#Duy a {
     text-transform: uppercase;
     border-style: solid;
-    font-size: 15px;
+    font-size: 12px;
     padding: 5px;
     border-radius: 5rem;
 }
 
-.Duy h3 {
+#Duy h3 {
     text-transform: uppercase;
     padding-top: 20px;
 }
 
 /* Hoan */
 
-.Hoan {
+#Hoan {
     border-style: solid;
     border-radius: 0.5rem;
     text-align: center;
     width: 250px;
     height: 350px;
-    background-color: #fff;
-    color: #000;
 }
 
-.Hoan img {
+#Hoan img {
     margin-top: 10px;
     height: 220px;
     width: 220px;
     border: solid;
 }
 
-.Hoan div {
+#Hoan div {
     padding: 10px 0;
 }
 
-.Hoan a {
+#Hoan a {
     text-transform: uppercase;
     border-style: solid;
-    font-size: 15px;
+    font-size: 12px;
     padding: 5px;
     border-radius: 5rem;
 }
 
-.Hoan h3 {
+#Hoan h3 {
     text-transform: uppercase;
     padding-top: 20px;
 }
 
 /* Duc */
 
-.Duc {
+#Duc {
     border-style: solid;
     border-radius: 0.5rem;
     text-align: center;
     width: 250px;
     height: 350px;
-    background-color: #fff;
-    color: #000;
 }
 
-.Duc img {
+#Duc img {
     margin-top: 10px;
     height: 220px;
     width: 220px;
     border: solid;
 }
 
-.Duc div {
+#Duc div {
     padding: 10px 0;
 }
 
-.Duc a {
+#Duc a {
     text-transform: uppercase;
     border-style: solid;
-    font-size: 15px;
+    font-size: 12px;
     padding: 5px;
     border-radius: 5rem;
 }
 
-.Duc h3 {
+#Duc h3 {
     text-transform: uppercase;
     padding-top: 20px;
 }
 
 /* Dong */
 
-.Dong {
+#Dong {
     border-style: solid;
     border-radius: 0.5rem;
     text-align: center;
     width: 250px;
     height: 350px;
-    background-color: #fff;
-    color: #000;
 }
 
-.Dong img {
+#Dong img {
     margin-top: 10px;
     height: 220px;
     width: 220px;
     border: solid;
 }
 
-.Dong div {
+#Dong div {
     padding: 10px 0;
 }
 
-.Dong a {
+#Dong a {
     text-transform: uppercase;
     border-style: solid;
-    font-size: 15px;
+    font-size: 12px;
     padding: 5px;
     border-radius: 5rem;
 }
 
-.Dong h3 {
+#Dong h3 {
     text-transform: uppercase;
     padding-top: 20px;
 }

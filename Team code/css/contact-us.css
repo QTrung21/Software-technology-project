@@ -92,11 +92,11 @@ video {
     font-weight: 500;
     color: var(--text-color);
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-top: 50px;
 }
 
 .contact-us .content p {
-    margin-top: 10px;
+    margin-top: 20px;
     font-weight: 500;
     color: var(--text-color);
     font-size: 17px;
