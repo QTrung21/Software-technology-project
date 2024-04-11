@@ -10,7 +10,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   background: transparent;
-  background-color: var(--bg-color);
+  background-color:#151f28
 }
 
 :root {
@@ -60,7 +60,7 @@ html {
 
 .navbar a:hover {
   color: var(--bg-color);
-  background-color: var(--text-color);
+  background-color: transparent;
   display: inline-block;
   text-decoration: none;
 }
@@ -84,7 +84,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   background-color: #C0C0C0;
+=======
+  background-color: var(--bg-color);
+>>>>>>> 34d4b219ffca26bdbde7229a6f7dec1476d43f5d
 }
 
 .game-list {
@@ -150,6 +154,7 @@ a:hover {
 a:hover {
   color: #e73700;
 }
+
 h2 {
   margin-bottom: 48px;
   padding-bottom: 16px;
@@ -173,11 +178,9 @@ button {
 /* -------- Landing page ------- */
 
 .game-section {
-  padding: 75px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 130px 50px 50px 45px;  
 }
+
 .game-section .owl-stage {
   margin: 15px 0;
   display: flex;
@@ -186,8 +189,8 @@ button {
 
 .game-section .item {
   margin: 0 15px 60px;
-  width: 320px;
-  height: 400px;
+  width: 380px;
+  height: 510px;
   display: flex;
   display: -webkit-flex;
   align-items: flex-end;
@@ -220,7 +223,7 @@ button {
 
 .game-section .item-desc {
   padding: 0 24px 12px;
-  color: #fff;
+  color: var(--bg-color);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -250,7 +253,7 @@ button {
 }
 
 .game-section .owl-theme.custom-carousel .owl-dots {
-  margin-top: -20px;
+  margin-top: -10px;
   position: relative;
   z-index: 5;
 }
@@ -270,7 +273,7 @@ button {
 
   /* -------- Landing page ------- */
   .game-section {
-    padding: 75px 30px;
+    padding: 75px 10px;
   }
   .game-section .item {
     margin: 0 12px 60px;
@@ -335,9 +338,14 @@ button {
 
   /* -------- Landing page ------- */
   .game-section {
+    height: 100hv;
+    width: 100%;
     padding: 30px 15px 20px;
   }
   .game-section .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 10px 40px;
     width: 200px;
     height: 280px;
@@ -352,4 +360,54 @@ button {
     transform: translateY(calc(100% - 42px));
     -webkit-transform: translateY(calc(100% - 42px));
   }
+}
+
+.owl-carouselcustom-carouselowl-theme {
+  position: relative;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #333;
+}
+
+.owl-prev {
+  left: 10px;
+}
+
+.owl-next {
+  right: 10px;
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.owl-nav button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+.owl-prev {
+  left: 20px;
+}
+
+.owl-next {
+  right: 20px;
 }
