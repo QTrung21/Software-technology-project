@@ -38,4 +38,8 @@ dots.forEach((li, key) => {
 });
 window.onresize = function (event) {
   reloadSlider();
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> d238b152b651a09be503df79932313f3d5836813
