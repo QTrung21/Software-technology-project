@@ -4,11 +4,20 @@
     <title>Group 11</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./css/home.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="../asset/fontawesome-free-6.5.1-web/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../asset/fontawesome-free-6.5.1-web/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -16,16 +25,56 @@
       <a href="home.html" class="logo">Group 11</a>
       <nav class="navbar">
         <a href="home.html">Home</a>
-        <a href="game.html">Game</a>
+        <a href="game_main.html">Game</a>
         <a href="about-us.html">About us</a>
-        <a href="#news">News</a>
+        <a href="news.html">News</a>
         <a href="contact-us.html">Contact us</a>
-        <a href="#search"><i class="bx bx-search-alt-2"></i></a>
         <a href="login2.html"><i class="bx bx-user"></i></a>
       </nav>
     </header>
 
-    <div id="block-1" class="width-height-block"></div>
+    <div class="slider">
+      <div class="list">
+        <div class="item">
+          <img
+            src="../Image/slidershow/CTAH1.webp"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="../Image/slidershow/FO4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="../Image/slidershow/LMHT.jpg"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img src="../Image/slidershow/VAL.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img
+            src="../Image/slidershow/CTAH2.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <ul class="dots">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
     <div id="block-2" class="width-height-block">
       <h1 class="h1">About Me</h1>
       <ul id="list-block-2">
@@ -75,7 +124,6 @@
         </li>
       </ul>
     </div>
-    <div id="block-3" class="width-height-block"></div>
     <div id="block-4" class="width-height-block">
       <h1 class="h1-block-4">Nền tảng Garena</h1>
       <div id="content-block-4">
@@ -115,6 +163,42 @@
         <img src="../Image/Capture.PNG" alt="" />
       </div>
     </div>
-    <div id="block-6" class="width-height-block"></div>
+    <div id="block-6">
+      <div id="ct-1">
+        <img src="../Image/logo@2x.c05a558a.png" alt="" />
+        <p>
+          CÔNG TY CỔ PHẦN GIẢI TRÍ VÀ THỂ THAO ĐIỆN TỬ VIỆT NAM Giấy CNĐKKD số
+          0105301438, cấp lần đầu ngày 10/05/2011
+        </p>
+        <p>
+          Cơ quan cấp: Phòng Đăng ký kinh doanh- Sở Kế hoạch và đầu tư TP Hà Nội
+        </p>
+        <p>
+          Địa chỉ trụ sở chính: Tầng 28, Tòa nhà trung tâm Lotte Hà Nội, 54 Liễu
+          Giai, Phường Cống Vị, Quận Ba Đình, Thành phố Hà Nội, Việt Nam.
+        </p>
+        <p>Điện thoại: 024 73053939</p>
+      </div>
+      <div id="ct-2">
+        <table>
+          <tr style="color: #8e8f90">
+            <td>Company</td>
+            <td>Nền tảng</td>
+            <td>Dịch vụ</td>
+          </tr>
+          <tr style="color: #000">
+            <td><a href="">Giới thiệu</a></td>
+            <td><a href="">Garena PC</a></td>
+            <td><a href="">Hỗ trợ</a></td>
+          </tr>
+          <tr style="color: #000">
+            <td><a href="">Tuyển dụng</a></td>
+            <td></td>
+            <td><a href="">Tài Khoản</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="./js/home.js"></script>
   </body>
 </html>

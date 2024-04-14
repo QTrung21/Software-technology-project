@@ -54,8 +54,7 @@ html {
   
 .navbar a:hover {
     color: black;
-    background-color: white;
-    backdrop-filter: blur(10px);
+    background-color: #ccc;
     display: inline-block;
 }
 
