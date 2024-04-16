@@ -39,12 +39,7 @@ html {
   font-weight: 600;
 }
 
-.logo:hover {
-  text-decoration: none;
-}
-
 .navbar a {
-  line-height: 75px;
   color: var(--text-color);
   display: inline-block;
   padding: 0px 20px;
@@ -81,7 +76,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #C0C0C0;
 }
 
 .game-list {
