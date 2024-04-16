@@ -12,7 +12,7 @@ html{
 }
 
 :root{
-    --bg-color: black;
+    --bg-color: #6e6e24;
     --text-color: black;
 }
 
@@ -53,9 +53,10 @@ html{
 }
   
 .navbar a:hover {
-    color: black;
-    background-color: #ccc;
+    color: var(--bg-color);
+    background-color: transparent;
     display: inline-block;
+    text-decoration: none;
 }
 
 /* About us */

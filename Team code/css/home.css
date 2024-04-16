@@ -4,31 +4,39 @@
   border: none;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
+  background: transparent;
 }
 
 :root {
-  --bg-color: black;
-  --text-color: white;
+  --bg-color: #6e6e24;
+  --text-color: black;
 }
 
 /* Header */
 
 .header {
+  z-index: 1;
   height: 75px;
   display: flex;
   left: 0;
   right: 0;
   padding: 0px 10%;
   justify-content: space-between;
-  background-color: var(--bg-color);
+  background-color: transparent;
+  backdrop-filter: blur(10px);
   opacity: 70%;
 }
 
 .logo {
   line-height: 75px;
+  color: var(--text-color);
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .navbar a {
@@ -45,8 +53,8 @@ html {
 }
 
 .navbar a:hover {
-  color: #000;
-  background-color: #ccc;
+  color: var(--bg-color);
+  background-color: transparent;
   display: inline-block;
 }
 
