@@ -11,7 +11,7 @@ $(document).ready(function() {
     loop: true,
     dots: false,
     nav: true,
-    navText: ['<span class="owl-prev"></span>', '<span class="owl-next"></span>']
+    navText: ['<span class="owl-prev"><i class="fa-solid fa-less-than"></i></span>', '<span class="owl-next"><i class="fa-solid fa-greater-than"></i></span>']
   });
 
   $(".custom-carousel .item").click(function() {

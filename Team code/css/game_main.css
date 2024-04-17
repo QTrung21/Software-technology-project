@@ -84,11 +84,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
   background-color: #C0C0C0;
-=======
   background-color: var(--bg-color);
->>>>>>> 34d4b219ffca26bdbde7229a6f7dec1476d43f5d
 }
 
 .game-list {
@@ -172,10 +169,6 @@ h3 {
 button {
   outline: none !important;
 }
-/******* Common Element CSS End *********/
-
-/******* Middle section CSS Start ******/
-/* -------- Landing page ------- */
 
 .game-section {
   padding: 130px 50px 50px 45px;  
@@ -405,9 +398,9 @@ button {
 }
 
 .owl-prev {
-  left: 20px;
+  left: 5px;
 }
 
 .owl-next {
-  right: 20px;
+  right: 5px;
 }
