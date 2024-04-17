@@ -359,7 +359,7 @@ button {
   position: relative;
 }
 
-.owl-prev,
+/* .owl-prev,
 .owl-next {
   position: absolute;
   top: 50%;
@@ -374,9 +374,9 @@ button {
 
 .owl-next {
   right: 10px;
-}
+} */
 
-.owl-nav button {
+/* .owl-nav button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -403,4 +403,27 @@ button {
 
 .owl-next {
   right: 5px;
+} */
+.owl-nav button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px; /* Size of the arrow */
+  color:#C0C0C0; /* Arrow color */
+  text-shadow: 0 0 10px rgba(0,0,0,0.5); /* Optional: shadow for better visibility */
+}
+
+.owl-nav .owl-prev {
+  left: 10px;
+}
+
+.owl-nav .owl-next {
+  right: 10px;
+}
+
+.owl-nav button:hover {
+  color: #ccc; /* Color when hovered */
 }
