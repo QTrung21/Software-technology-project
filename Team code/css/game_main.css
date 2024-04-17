@@ -4,15 +4,17 @@
   border: none;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
 }
 
 html {
+  font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
+  background: transparent;
+  background-color:#151f28
 }
 
 :root {
-  --bg-color: #6e6e24;
+  --bg-color: #ccc;
   --text-color: black;
 }
 
@@ -39,7 +41,12 @@ html {
   font-weight: 600;
 }
 
+.logo:hover {
+  text-decoration: none;
+}
+
 .navbar a {
+  line-height: 75px;
   color: var(--text-color);
   display: inline-block;
   padding: 0px 20px;
@@ -64,18 +71,21 @@ body {
   height: auto;
   width: 100%;
   height: 100vh;
-  background-color: #000;
+  background-color: #C0C0C0;
 }
 
 .game_container {
   padding-top: 75px;
+  margin: 0 0 0 0;
   /* overflow: hidden; */
-  height: 100vh;
+  height: 700px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #C0C0C0;
+  background-color: var(--bg-color);
 }
 
 .game-list {
@@ -159,10 +169,6 @@ h3 {
 button {
   outline: none !important;
 }
-/******* Common Element CSS End *********/
-
-/******* Middle section CSS Start ******/
-/* -------- Landing page ------- */
 
 .game-section {
   padding: 130px 50px 50px 45px;  
@@ -353,48 +359,26 @@ button {
   position: relative;
 }
 
-.owl-prev,
-.owl-next {
+.owl-nav button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 30px;
-  color: #333;
+  font-size: 24px; 
+  color:#C0C0C0; 
+  text-shadow: 0 0 10px rgba(0,0,0,0.5); 
 }
 
-.owl-prev {
+.owl-nav .owl-prev {
   left: 10px;
 }
 
-.owl-next {
+.owl-nav .owl-next {
   right: 10px;
 }
 
-.owl-nav button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #333;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  transition: all 0.3s ease;
-}
-
 .owl-nav button:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #000;
-}
-
-.owl-prev {
-  left: 20px;
-}
-
-.owl-next {
-  right: 20px;
+  color: #ccc; 
 }
