@@ -359,23 +359,32 @@ button {
   position: relative;
 }
 
+<<<<<<< HEAD
 /* .owl-prev,
 .owl-next {
+=======
+.owl-nav button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+>>>>>>> aca0ff06da542bddf9c37bae07908570b6a01b64
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 30px;
-  color: #333;
+  font-size: 24px; 
+  color:#C0C0C0; 
+  text-shadow: 0 0 10px rgba(0,0,0,0.5); 
 }
 
-.owl-prev {
+.owl-nav .owl-prev {
   left: 10px;
 }
 
-.owl-next {
+.owl-nav .owl-next {
   right: 10px;
 } */
 
+<<<<<<< HEAD
 /* .owl-nav button {
   position: absolute;
   top: 50%;
@@ -392,10 +401,12 @@ button {
   transition: all 0.3s ease;
 }
 
+=======
+>>>>>>> aca0ff06da542bddf9c37bae07908570b6a01b64
 .owl-nav button:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #000;
+  color: #ccc; 
 }
+<<<<<<< HEAD
 
 .owl-prev {
   left: 5px;
@@ -427,3 +438,5 @@ button {
 .owl-nav button:hover {
   color: #ccc; /* Color when hovered */
 }
+=======
+>>>>>>> aca0ff06da542bddf9c37bae07908570b6a01b64
