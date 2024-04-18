@@ -10,7 +10,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   background: transparent;
-  background-color:#151f28
+  background-color: #151f28
 }
 
 :root {
@@ -118,19 +118,24 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   background-color: #151f28;
 }
+
 .clear {
   clear: both;
 }
+
 img {
   max-width: 100%;
   border: 0px;
 }
-ul,ol {
+
+ul,
+ol {
   list-style: none;
 }
 
@@ -141,6 +146,7 @@ a {
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
 }
+
 a:focus,
 a:active,
 a:visited,
@@ -148,6 +154,7 @@ a:hover {
   text-decoration: none;
   outline: none;
 }
+
 a:hover {
   color: #e73700;
 }
@@ -161,17 +168,19 @@ h2 {
   position: relative;
   text-transform: capitalize;
 }
+
 h3 {
   margin: 0 0 10px;
   font-size: 25px;
   line-height: 36px;
 }
+
 button {
   outline: none !important;
 }
 
 .game-section {
-  padding: 130px 50px 50px 45px;  
+  padding: 130px 50px 50px 45px;
 }
 
 .game-section .owl-stage {
@@ -250,6 +259,7 @@ button {
   position: relative;
   z-index: 5;
 }
+
 /******** Middle section CSS End *******/
 
 /***** responsive css Start ******/
@@ -258,6 +268,7 @@ button {
   h2 {
     margin-bottom: 32px;
   }
+
   h3 {
     margin: 0 0 8px;
     font-size: 24px;
@@ -268,14 +279,17 @@ button {
   .game-section {
     padding: 75px 10px;
   }
+
   .game-section .item {
     margin: 0 12px 60px;
     width: 260px;
     height: 360px;
   }
+
   .game-section .item.active {
     width: 400px;
   }
+
   .game-section .item-desc {
     transform: translateY(calc(100% - 46px));
     -webkit-transform: translateY(calc(100% - 46px));
@@ -286,11 +300,13 @@ button {
   h2 {
     margin-bottom: 32px;
   }
+
   h3 {
     margin: 0 0 8px;
     font-size: 24px;
     line-height: 32px;
   }
+
   .line-title {
     width: 330px;
   }
@@ -299,14 +315,17 @@ button {
   .game-section {
     padding: 50px 30px 40px;
   }
+
   .game-section .item {
     margin: 0 12px 60px;
     width: 240px;
     height: 330px;
   }
+
   .game-section .item.active {
     width: 360px;
   }
+
   .game-section .item-desc {
     transform: translateY(calc(100% - 42px));
     -webkit-transform: translateY(calc(100% - 42px));
@@ -317,14 +336,17 @@ button {
   body {
     font-size: 14px;
   }
+
   h2 {
     margin-bottom: 20px;
   }
+
   h3 {
     margin: 0 0 8px;
     font-size: 19px;
     line-height: 24px;
   }
+
   .line-title {
     width: 250px;
   }
@@ -335,6 +357,7 @@ button {
     width: 100%;
     padding: 30px 15px 20px;
   }
+
   .game-section .item {
     display: flex;
     justify-content: center;
@@ -343,11 +366,13 @@ button {
     width: 200px;
     height: 280px;
   }
+
   .game-section .item.active {
     width: 270px;
     box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
   }
+
   .game-section .item-desc {
     padding: 0 14px 5px;
     transform: translateY(calc(100% - 42px));
@@ -376,7 +401,7 @@ button {
 }
 
 .owl-nav button:hover {
-  color: #ccc; 
+  color: #ccc;
 }
 
 .owl-nav button {
@@ -386,9 +411,9 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 24px; 
-  color:#C0C0C0;  
-  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  font-size: 24px;
+  color: #C0C0C0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .owl-nav .owl-prev {
@@ -402,4 +427,3 @@ button {
 .owl-nav button:hover {
   color: #ccc;
 }
-
