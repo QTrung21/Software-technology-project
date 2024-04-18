@@ -359,33 +359,7 @@ button {
   position: relative;
 }
 
-<<<<<<< HEAD
-/* .owl-prev,
-.owl-next {
-=======
 .owl-nav button {
-  border: none;
-  background: transparent;
-  cursor: pointer;
->>>>>>> aca0ff06da542bddf9c37bae07908570b6a01b64
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px; 
-  color:#C0C0C0; 
-  text-shadow: 0 0 10px rgba(0,0,0,0.5); 
-}
-
-.owl-nav .owl-prev {
-  left: 10px;
-}
-
-.owl-nav .owl-next {
-  right: 10px;
-} */
-
-<<<<<<< HEAD
-/* .owl-nav button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -401,20 +375,10 @@ button {
   transition: all 0.3s ease;
 }
 
-=======
->>>>>>> aca0ff06da542bddf9c37bae07908570b6a01b64
 .owl-nav button:hover {
   color: #ccc; 
 }
-<<<<<<< HEAD
 
-.owl-prev {
-  left: 5px;
-}
-
-.owl-next {
-  right: 5px;
-} */
 .owl-nav button {
   border: none;
   background: transparent;
@@ -422,9 +386,9 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 24px; /* Size of the arrow */
-  color:#C0C0C0; /* Arrow color */
-  text-shadow: 0 0 10px rgba(0,0,0,0.5); /* Optional: shadow for better visibility */
+  font-size: 24px; 
+  color:#C0C0C0;  
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .owl-nav .owl-prev {
@@ -436,7 +400,6 @@ button {
 }
 
 .owl-nav button:hover {
-  color: #ccc; /* Color when hovered */
+  color: #ccc;
 }
-=======
->>>>>>> aca0ff06da542bddf9c37bae07908570b6a01b64
+
