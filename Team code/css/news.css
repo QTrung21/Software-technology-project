@@ -330,3 +330,32 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #0056b3; /* Thay đổi màu nền khi di chuột qua */
 }
+
+/* Nhấp nháy  */
+@keyframes rainbow-text {
+  0%,100% {
+    color: red;
+  }
+  17% {
+    color: orange;
+  }
+  34% {
+    color: yellow;
+  }
+  51% {
+    color: green;
+  }
+  68% {
+    color: blue;
+  }
+  85% {
+    color: indigo;
+  }
+}
+
+.featured {
+  font-weight: bold; /* Làm đậm chữ */
+  font-size: 24px; /* Tăng kích thước chữ */
+  animation: rainbow-text 2s linear infinite; /* Áp dụng animation */
+  text-align: center; /* Căn giữa chữ */
+}
