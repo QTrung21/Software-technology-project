@@ -4,10 +4,10 @@
   border: none;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   background: transparent;
   background-color: #151f28
@@ -20,50 +20,50 @@ html {
 
 /* -- Header -- */
 
-.header {
-  z-index: 1;
-  position: fixed;
-  height: 75px;
-  display: flex;
-  left: 0;
-  right: 0;
-  padding: 0px 10%;
-  justify-content: space-between;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
-}
+  .header {
+    z-index: 1;
+    position: fixed;
+    height: 75px;
+    display: flex;
+    left: 0;
+    right: 0;
+    padding: 0px 10%;
+    justify-content: space-between;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+  }
 
-.logo {
-  line-height: 75px;
-  color: var(--text-color);
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 600;
-}
+  .logo {
+    line-height: 75px;
+    color: var(--text-color);
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+  }
 
-.logo:hover {
-  text-decoration: none;
-}
+  .logo:hover {
+    text-decoration: none;
+  }
 
-.navbar a {
-  line-height: 75px;
-  color: var(--text-color);
-  display: inline-block;
-  padding: 0px 20px;
-  font-size: 20px;
-  font-weight: 600;
-}
+  .navbar a {
+    line-height: 75px;
+    color: var(--text-color);
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 20px;
+    font-weight: 600;
+  }
 
-.navbar {
-  margin-left: 50px;
-}
+  .navbar {
+    margin-left: 50px;
+  }
 
-.navbar a:hover {
-  color: var(--bg-color);
-  background-color: transparent;
-  display: inline-block;
-  text-decoration: none;
-}
+  .navbar a:hover {
+    color: var(--bg-color);
+    background-color: transparent;
+    display: inline-block;
+    text-decoration: none;
+  }
 
 /* -- Game display -- */
 
