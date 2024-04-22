@@ -191,7 +191,38 @@ span p{
   padding-top:50px;
   font-style:italic;
   
+}
 
+#btnXemThem {
+  width: 830px;
+  height: 100px;
+  border: 0px solid;
+  float: left;
+  padding-bottom: 17px;
+  margin-bottom: 20px;
+  background-color: #66ffcc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif; /* Chọn font chữ */
+  font-size: 40px; /* Kích thước font */
+  font-weight: bold; /* Độ đậm của font */
+  text-transform: uppercase; /* Chuyển đổi văn bản thành chữ in hoa */
+  text-decoration: none; /* Loại bỏ gạch chân */
+}
+#btnXemThem:hover {
+  background-color: #0056b3; /* Đổi màu khi di chuột qua */
+}
+.tin-tuc.hidden {
+  width: 1170px;
+  display: none;
+  
+ 
+  border:0px solid #010;
+  background-color:#FFF;
+  padding-left: 90px;
+  
 }
 
 /* Footer */
