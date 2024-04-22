@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             alert(data); // Hiển thị thông báo thành công
             // Chuyển hướng sau khi đăng ký thành công
-            window.location.href = 'home.html';
+            window.location.href = "home.html";
         })
         .catch(error => {
             alert(error.message); // Hiển thị thông báo lỗi
