@@ -99,13 +99,14 @@ form {
 
 /* Home */
 
-#contend {
+/* Áp dụng cho cả contend và tin-tuc */
+.content-container {
   width: 1170px;
   float: left;
-  border:0px solid #010;
-  background-color:#FFF;
+  background-color: #FFF;
   margin-left: 90px;
   margin-right: 400px;
+  border: 0px solid #010; 
 }
 
 #right {
