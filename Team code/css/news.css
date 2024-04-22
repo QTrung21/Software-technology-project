@@ -315,3 +315,18 @@ h4{
     background-color: #a4cec0;
 }
 
+/* Tạo kiểu cho nút Search */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    cursor: pointer; /* Con trỏ chuột dạng bàn tay khi di chuyển qua nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Thay đổi màu nền khi di chuột qua */
+}

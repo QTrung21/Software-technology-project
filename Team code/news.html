@@ -25,9 +25,10 @@
         </nav>
     </header>   
         <div id="h1">
-            <form class="search-form">
-                <input type="text" name="search" placeholder="Tìm bài viết, game...">
-            </form>
+          <form class="search-form" onsubmit="return performSearch()">
+            <input type="text" id="searchInput" placeholder="Tìm bài viết, game...">
+            <button type="submit">Search</button>
+          </form>
         </div>        
         <br>
         <div id="contend" class="content-container">
@@ -69,7 +70,8 @@
             </div>
              <div class="divs">
               <hr>
-            <br>               
+            <br>
+            <div class="news-item">               
             <span>  
             <a href="https://gamek.vn/nhung-dieu-can-biet-ve-stellar-blade-game-nong-hon-ca-nier-automata-178240421155341291.chn">
                 <img src="..\Image\Dong_image\123.webp" width="310" height="200">
@@ -81,6 +83,8 @@
             </span> 
             <hr>
             <br>
+            </div>
+            <div class="news-item"> 
             <span> 
             <a href="https://gamek.vn/xuat-hien-cap-doi-dynamic-duo-moi-khien-game-thu-toc-chien-phat-cuong-178240421100831449.chn">
                 <img src="..\Image\Dong_image\333.webp" width="310" height="200">
@@ -88,19 +92,23 @@
             </a> <br>
             Các game thủ Việt vừa phát hiện ra một giáo án cực kỳ chất lượng. <br>
             <p>Thế Anh  Phụ Nữ Số | 21/04/2024 03:30 PM</p>
+            
             </span> <br>
             <hr>
             <br>
+            </div>
+            <div class="news-item">
             <span> 
               <a href="https://gamek.vn/lo-dien-giai-dau-esports-co-tong-giai-thuong-khung-bac-nhat-lich-su-t1-co-the-chinh-la-cai-ten-dau-tien-duoc-moi-178240418122617836.chn">
                   <img src="..\Image\Dong_image\faker.webp" width="310" height="200">
               <h2> Lộ diện giải đấu Esports có tổng giải thưởng “khủng” bậc nhất lịch sử, T1 có thể chính là cái tên đầu tiên được mời</h2>
               </a> <br>
-              Mùa hè năm nay có lẽ là khoảng thời thời gian vô cùng bận rộn của tập thể T1. <br>
-              <p>Tùng Hoàng  Phụ Nữ Số | 18/04/2024 04:30 PM</p>
-              </span> <br>
-              <hr>
-              <br>
+            Mùa hè năm nay có lẽ là khoảng thời thời gian vô cùng bận rộn của tập thể T1. <br>
+            <p>Tùng Hoàng  Phụ Nữ Số | 18/04/2024 04:30 PM</p>
+            </span> <br>
+            <hr>
+            <br>
+            </div>
             <span> 
               <a href="https://gamek.vn/them-mot-dan-tuyen-thu-lck-co-the-do-bo-viet-nam-khan-gia-thi-nhau-doan-doi-hinh-178240419221556547.chn">
                   <img src="..\Image\Dong_image\lck.webp" width="310" height="200">

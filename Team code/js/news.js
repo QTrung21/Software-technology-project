@@ -36,5 +36,38 @@ function scrollToTop() {
       behavior: 'smooth'
   });
 }
+// Các hàm ô tìm kiếm
 
- 
+function performSearch() {
+  // Lấy giá trị nhập từ người dùng và chuyển thành chữ thường để so sánh không phân biệt hoa thường
+  var input = document.getElementById("searchInput").value.toLowerCase();
+  
+  // Lấy tất cả các thẻ <a> trong các mục tin tức, giả định rằng mỗi <h2> nằm trong một thẻ <a>
+  var newsItems = document.querySelectorAll(".news-item a");
+
+  // Biến để kiểm tra xem có tìm thấy tin tức phù hợp không
+  var found = false;
+
+  // Duyệt qua từng mục tin tức
+  newsItems.forEach(function(item) {
+      // Lấy nội dung của thẻ <h2> và chuyển nó thành chữ thường
+      var title = item.querySelector("h2").textContent.toLowerCase();
+      
+      // Kiểm tra xem tiêu đề có chứa từ khóa nhập vào không
+      if (title.includes(input)) {
+          // Nếu có, chuyển hướng người dùng đến trang chi tiết của tin tức
+          window.location.href = item.href;
+          found = true;
+          // Kết thúc vòng lặp ngay lập tức sau khi tìm thấy kết quả đầu tiên phù hợp
+          return false;
+      }
+  });
+
+  // Nếu không tìm thấy kết quả nào phù hợp, hiển thị thông báo cho người dùng
+  if (!found) {
+      alert("Không tìm thấy tin tức phù hợp!");
+  }
+
+  // Trả về false để ngăn không cho form thực hiện hành động mặc định là tải lại trang
+  return false;
+}
