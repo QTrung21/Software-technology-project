@@ -16,7 +16,8 @@
 /* Header */
 
 .header {
-  z-index: 1;
+  z-index: 20; /* Z-index lớn hơn sticky container */
+  position: relative;
   height: 75px;
   display: flex;
   left: 0;
@@ -111,7 +112,7 @@ form {
 
 #right {
   width: 300px;
-  position: fixed;
+  
   right: 300px;
   float: right;
   border: 0px solid #000;
@@ -233,7 +234,9 @@ span p{
   height: 300px;
   background-color: #192433;
   clear: both;
-
+  position: relative;
+  z-index: 20;
+  margin-top: 20px;
 }
 
 .divft{
@@ -359,3 +362,15 @@ button[type="submit"]:hover {
   animation: rainbow-text 2s linear infinite; /* Áp dụng animation */
   text-align: center; /* Căn giữa chữ */
 }
+
+/* Stop banner */
+
+.sticky-container {
+  position: sticky;
+  top: 200px; /* Khoảng cách từ đầu trang khi bắt đầu "dính" */
+  bottom: 350px; /* Khoảng cách từ cuối trang để dừng */
+  float: right;
+  right: 300px; /* Giữ khoảng cách từ cạnh phải của viewport */
+  z-index: 10;
+}
+
